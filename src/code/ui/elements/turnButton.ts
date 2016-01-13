@@ -54,7 +54,7 @@ module Catan {
 
         private processTurn() {
 
-            if (this.gameObject.players.length < 1) {
+            if (this.gameObject.players.length < 2) {
                 alert('You need at least two players to start a game');
             } else if (this.gameObject.gameState == 'new') {
                 this.gameObject.socket.emit('startGame');
