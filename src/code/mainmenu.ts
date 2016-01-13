@@ -13,8 +13,8 @@ module Catan {
 
         create() {
 
-            this.socket = io.connect('http://localhost:3000');
-            //this.socket = io.connect('http://192.168.0.15:3000');
+            //this.socket = io.connect('http://localhost:3000');
+            this.socket = io.connect('http://catan.imbalancegaming.com/:3000');
 
             this.background = this.add.sprite(0, 0, 'menuBackground');
             this.background.alpha = 0;
